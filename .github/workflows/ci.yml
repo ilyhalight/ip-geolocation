@@ -27,5 +27,5 @@ jobs:
       - name: Upload Artifact 🚀
         uses: actions/upload-artifact@v4
         with:
-          name: translate
+          name: ip-geolocation
           path: dist/*
