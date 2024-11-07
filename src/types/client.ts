@@ -10,6 +10,11 @@ export enum IPGeolocationService {
    * For unlimited requests set your API Token
    */
   freeipapi = "freeipapi",
+  /**
+   * The total limit is 45 req/min on free tier
+   *
+   * Support paid API
+   */
   ipapicom = "ipapicom",
 }
 
