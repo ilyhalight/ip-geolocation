@@ -1,0 +1,33 @@
+export type LookupErrorMessage = "private range" | "reserved range" | "invalid query";
+export type ResponseLang = "en" | "de" | "es" | "pt-BR" | "fr" | "ja" | "zh-CN" | "ru";
+export type RawLookupFullSuccessResponse = {
+    message?: LookupErrorMessage;
+    status: "success" | "fail";
+    continent: string;
+    continentCode: string;
+    country: string;
+    countryCode: string;
+    region: string;
+    regionName: string;
+    city: string;
+    district: string;
+    zip: string;
+    lat: number;
+    lon: number;
+    timezone: string;
+    offset: number;
+    currency: string;
+    isp: string;
+    org: string;
+    as: string;
+    asname: string;
+    reverse: string;
+    mobile: boolean;
+    proxy: boolean;
+    hosting: boolean;
+    query: string;
+};
+export type RawLookupSuccessResponse = Partial<RawLookupFullSuccessResponse>;
+export type RawLookupErrorResponse = Pick<RawLookupFullSuccessResponse, "status" | "message">;
+export type LookupSuccessResponse = Omit<RawLookupFullSuccessResponse, "region" | "district" | "zip" | "offset" | "currency" | "asname" | "reverse" | "query">;
+//# sourceMappingURL=ipapicom.d.ts.map

@@ -1,0 +1,27 @@
+{
+  "name": "ip-geolocation-examples",
+  "version": "1.0.0",
+  "author": "Toil",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ilyhalight/ip-geolocation"
+  },
+  "devDependencies": {
+    "ofetch": "^1.3.4",
+    "typescript": "^5.4.5"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "bugs": {
+    "url": "https://github.com/ilyhalight/ip-geolocation/issues"
+  },
+  "description": "Usage example of ip geolocation lookup",
+  "engines": {
+    "node": ">=18"
+  },
+  "homepage": "https://github.com/ilyhalight/ip-geolocation",
+  "license": "MIT",
+  "scripts": {},
+  "type": "module"
+}
